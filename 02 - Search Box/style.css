@@ -1,0 +1,50 @@
+.start{
+    background-image: url(bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+    backdrop-filter: blur(2px);
+    width: 100%;
+    padding: 15px 35px;
+    color: var(--w);
+    z-index: 1000;
+}
+
+header nav a{
+    color: var(--w);
+    font-size: 18px;
+    text-decoration: none;
+    padding: 7px;
+    margin: 7px;
+}
+
+header .fa-search{
+    cursor: pointer;
+}
+
+.search-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: linear-gradient(135deg, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+    backdrop-filter: blur(2px);
+    transform: scale(0);
+}
+
+.search-box input{
+    font-size: 18px;
+    border: none;
+    padding: 5px;
+    outline: none;
+}
+
+.search-box.show{
+    transform: scale(1);
+}
